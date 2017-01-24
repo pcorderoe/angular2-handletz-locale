@@ -6,9 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title><%= APP_TITLE %></title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" href="assets/favicon/favicon-<%= ENV_CONFIG.ENV %>.ico" type="image/x-icon">
-
+  <link rel="stylesheet" href="assets/vendor/bootstrap-4.0.0-alpha.5-dist/css/bootstrap-flex.min.css">
+  <link rel="stylesheet" href="assets/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
   <!-- inject:css -->
   <!-- endinject -->
 </head>
@@ -33,7 +34,8 @@
 
   <!-- inject:js -->
   <!-- endinject -->
-
+  <script src="assets/vendor/moment-with-locales.min.js"></script>
+  <script src="assets/vendor/moment-timezone-with-data.min.js"></script>
   <% if (BUILD_TYPE === 'dev') { %>
   <script>
   System.import('<%= BOOTSTRAP_MODULE %>')

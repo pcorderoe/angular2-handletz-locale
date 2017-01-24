@@ -1,0 +1,76 @@
+<div class="container-fluid">
+    <div class="row flex-items-md-center">
+        <div class="col-md-4 login-box">
+            <h2 class="title" i18n="Login Title">Welcome</h2>
+            <form>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <select name="locale" [(ngModel)]="locale" id="" class="form-control" (ngModelChange)="selectLocale($event)">
+                            <option value="es-ES" i18n>Spanish</option>
+                            <option value="en-US" i18n selected>English</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <div class="input-group-icon">
+                            <div class="input-icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <input type="email" name="username" class="form-control" i18n-placeholder placeholder="Email"/>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="input-group-icon">
+                            <div class="input-icon">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                            <input type="password" name="password" class="form-control" i18n-placeholder placeholder="Password"/>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4 timezones ">
+            <h2 class="title" i18n>Timezones</h2>
+            <form action="">
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <select name="timezone" [(ngModel)]="timezone" id="" class="form-control" (ngModelChange)="setTimezone($event)">
+                            <option value="{{tz}}" *ngFor="let tz of listOfTimezones">{{tz}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <div class="input-group-icon">
+                            <div class="input-icon">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                            <input type="text" name="actualTime" class="form-control" [ngModel]="actualDatetime"/>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .login-box, .timezones{
+        background:#f1f2f4;
+        padding:15px 10px;
+        border-radius: 5px;
+        text-align: center;
+        margin-right:5px;
+    }
+    .input-group-icon .input-icon{
+        position:absolute;
+        z-index: 3;
+        padding: 8px 15px;
+        opacity:.5;
+    }
+    .input-group-icon input{
+        padding-left: 40px;
+    }
+</style>

@@ -1,0 +1,25 @@
+<div class="container-fluid gantt-wrapper" [ngStyle]="{'width':totalWidth+'px'}">
+    <div class="row header-month">
+        <div class="item" *ngFor="let m of headers.months" [ngStyle]="{'width':m.width+'px'}">{{m.name}}</div>
+    </div>
+    <div class="row header-day">
+        <div class="item" *ngFor="let d of headers.days" [ngStyle]="{'width':d.width+'px'}">{{d.name}}</div>
+    </div>
+    <div class="row header-hour" *ngIf="scale == 'hourly'">
+        <div class="item" *ngFor="let h of headers.hours" [ngStyle]="{'width':100/totalWidth.toFixed(4)+'%'}">{{h}}</div>
+    </div>
+</div>
+
+<style>
+    .gantt-wrapper{
+        /*border:1px solid #ccc;*/
+        background: #e9e9e9;
+    }
+    /*.header-month{ display: none;}*/
+    .header-month .item, .header-day .item, .header-hour .item {
+        display: inline;
+        border:1px solid #ccc;
+        min-width:30px;
+        text-align: center;
+    }
+</style>

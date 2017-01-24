@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="65cc4ab3b4c438e07c89be2b677d08369fb62da2" datatype="html">
+        <source>Welcome</source>
+        <target/>
+        <note priority="1" from="description">Login Title</note>
+      </trans-unit>
+      <trans-unit id="1b2fa65763b744291e832a3c5fa0ce8641da2911" datatype="html">
+        <source>Spanish</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="a0843de0a64adcc7ee6a946408b6876cd8abdcae" datatype="html">
+        <source>English</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="244aae9346da82b0922506c2d2581373a15641cc" datatype="html">
+        <source>Email</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="c32ef07f8803a223a83ed17024b38e8d82292407" datatype="html">
+        <source>Password</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="599c83dbae50fc6344fe15b25a00b5214233d156" datatype="html">
+        <source>Timezones</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="c49bd9f3beabd571d9c5747e6b162c09af194de6" datatype="html">
+        <source>Pacific S.A. Standard Time (GMT-03:00)</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="3af4c11cc29efc9fec23ef747019baa0dc8ca266" datatype="html">
+        <source>FLE Standard Time (GMT+02:00)</source>
+        <target/>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
